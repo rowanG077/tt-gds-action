@@ -15,8 +15,8 @@ runs:
         #           and eqy_test/action.yml
         #           PDK_VERSION=cd1748bb197f9b7af62a54507de6624e30363943
         cat << EOF >> $GITHUB_ENV
-        OPENLANE_TAG=2024.04.22
-        OPENLANE_IMAGE_NAME=efabless/openlane:2024.04.22
+        OPENLANE_TAG=2024.04.22-update-yosys
+        OPENLANE_IMAGE_NAME=rowanG077/openlane:2024.04.22-update-yosys
         OPENLANE_ROOT=/home/runner/openlane
         PDK_ROOT=/home/runner/pdk
         PDK=sky130A
@@ -53,7 +53,7 @@ runs:
     - name: Install OpenLane
       shell: bash
       run: |
-        git clone --depth=1 --branch $OPENLANE_TAG https://github.com/The-OpenROAD-Project/OpenLane.git $OPENLANE_ROOT
+        git clone --depth=1 --branch $OPENLANE_TAG https://github.com/rowanG077/OpenLane.git $OPENLANE_ROOT
         cd $OPENLANE_ROOT
         make
 

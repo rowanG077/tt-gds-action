@@ -15,8 +15,8 @@ runs:
         #           and eqy_test/action.yml
         #           PDK_VERSION=cd1748bb197f9b7af62a54507de6624e30363943
         cat << EOF >> $GITHUB_ENV
-        OPENLANE_TAG=2024.04.22-update-yosys
-        OPENLANE_IMAGE_NAME=rowanG077/openlane:2024.04.22-update-yosys
+        OPENLANE_TAG=updated-yosys-dev-amd64
+        OPENLANE_IMAGE_NAME=rowang337/openlane:updated-yosys-dev-amd64
         OPENLANE_ROOT=/home/runner/openlane
         PDK_ROOT=/home/runner/pdk
         PDK=sky130A
